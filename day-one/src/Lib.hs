@@ -26,10 +26,6 @@ getCorrectNumbers numbers =
 getFinalAnswer :: (Int, Int) -> Int
 getFinalAnswer numbers = fst numbers * snd numbers
 
--- case numbers of
--- Nothing -> Nothing
--- Just (first, second) -> Just (first * second)
-
 solve :: String -> IO (Maybe Int)
 solve filePath = do
   inputNumbers <- readInput filePath
